@@ -9,7 +9,7 @@ class AttributesTableSeeder extends Seeder {
 		Attribute::create(
 			array(
 				'name' => 'Symptoms',
-				'slug' => 'syptoms',
+				'slug' => 'symptoms',
 				'type' => 'checkbox',
 				'options' => [
 					'cough' => 'Cough',

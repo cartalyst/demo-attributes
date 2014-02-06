@@ -1,6 +1,6 @@
 @extends('layouts.default')
-@section('content')
 
+@section('content')
 
 	{{-- Page header --}}
 	<div class="page-header">
@@ -12,6 +12,7 @@
 	<br />
 
 	<div class="form-horizontal">
+
 		{{ Form::open(array('url' => '/patients')) }}
 
 		<div class="form-group">
@@ -70,8 +71,8 @@
 		</div>
 
 		{{Form::close()}}
-	</div>
 
+	</div>
 
 @stop
 

@@ -3,18 +3,19 @@
 class AttributesController extends \BaseController {
 
 	/**
-	 * Display a listing of the resource.
+	 * Display a listing of the attributes.
 	 *
 	 * @return Response
 	 */
 	public function index()
 	{
 		$attributes = Attribute::all();
+
 		return View::make('attributes.index', compact('attributes'));
 	}
 
 	/**
-	 * Show the form for creating a new resource.
+	 * Show the form for creating a new attribute.
 	 *
 	 * @return Response
 	 */
@@ -24,13 +25,12 @@ class AttributesController extends \BaseController {
 	}
 
 	/**
-	 * Store a newly created resource in storage.
+	 * Store a newly created attribute in storage.
 	 *
 	 * @return Response
 	 */
 	public function store()
 	{
-
 		$options = array();
 
 		foreach (Input::get('options', array()) as $option)
@@ -45,44 +45,10 @@ class AttributesController extends \BaseController {
 		Attribute::create($input);
 
 		return Redirect::to('attributes')->with('message', 'Attribute Saved.');
-
 	}
 
 	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
-	}
-
-	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
-
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
-
-	/**
-	 * Remove the specified resource from storage.
+	 * Remove the specified attribute from storage.
 	 *
 	 * @param  int  $id
 	 * @return Response
