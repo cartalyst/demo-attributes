@@ -4,7 +4,7 @@
 {{-- Page header --}}
 
 <div class="page-header">
-	<h1>Patients</h1>
+	<h1>Attributes</h1>
 	<p class="lead">Create attributes and assign them to any object! In this example attributes are assigned to the patients model. :)</p>
 	<p><a class="btn btn-lg btn-success" href="{{ URL::to('attributes/create') }}" role="button">Add Attribute</a></p>
 </div>
