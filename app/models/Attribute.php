@@ -11,7 +11,7 @@ class Attribute extends Cartalyst\Attributes\Attribute {
 
 	public function getOptionsAttribute($options)
 	{
-		return json_decode($options, true);
+		return ! empty($options) ? json_decode($options, true) : [];
 	}
 
 	public function setOptionsAttribute($options)
