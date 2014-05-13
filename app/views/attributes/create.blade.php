@@ -87,5 +87,5 @@
 @stop
 
 @section('scripts')
-	<script src="/assets/js/attributes.js"></script>
+	<script src="{{ URL::to('assets/js/attributes.js') }}"></script>
 @stop
