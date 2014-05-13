@@ -9,8 +9,6 @@
 
 </div>
 
-<br />
-
 <div class="form-horizontal">
 
 	{{ Form::open(array('url' => '/patients')) }}

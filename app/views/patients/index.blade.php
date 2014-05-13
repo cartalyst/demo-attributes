@@ -3,12 +3,12 @@
 
 {{-- Page header --}}
 
-<div>
+<div class="page-header">
 	<h1>Patients</h1>
 	<p class="lead">In this example, you can view patients and their meta data. Want more? head over to attributes and create one, then come back and see the magic.</p>
 	<p><a class="btn btn-lg btn-success" href="{{ URL::to('patients/create') }}" role="button">Add Patient</a></p>
 </div>
-<hr>
+
 <div class="row">
 	<div class="col-lg-12">
 		<div class="panel panel-default">

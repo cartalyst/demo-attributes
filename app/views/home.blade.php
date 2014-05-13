@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="cover">
+<div class="page-header">
 	<h1 class="cover-heading">Attributes</h1>
 	<p class="lead">A framework agnostic attributes package that allows you to attach attributes to objects, it utilizes the Entity-Attribute-Value Model to assign values to objects.</p>
 	<p class="lead">
