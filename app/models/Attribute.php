@@ -16,7 +16,7 @@ class Attribute extends Cartalyst\Attributes\Attribute {
 
 	public function setOptionsAttribute($options)
 	{
-		$this->attributes['options'] = ! empty($options) ? json_encode($options) : '';
+		$this->attributes['options'] = ! empty($options) ? json_encode($options) : null;
 	}
 
 }
