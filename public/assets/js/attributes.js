@@ -34,7 +34,7 @@ jQuery(document).ready(function($) {
 
 		$tr.find('input').each(function()
 		{
-			$(this).val('').attr('name', $(this).attr('name').replace(/(\d+)/, totalRows + 1));
+			$(this).val('').attr('name', $(this).attr('name').replace(/(\d+)/, totalRows + 1)).prop('required', true);
 		});
 
 		$('table tbody').append($tr);

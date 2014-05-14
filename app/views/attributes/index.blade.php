@@ -76,5 +76,5 @@
 	@stop
 
 	@section('scripts')
-	<script src="/assets/js/scripts.js"></script>
+	<script src="{{ URL::to('assets/js/scripts.js') }}"></script>
 	@stop

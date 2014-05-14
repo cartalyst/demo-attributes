@@ -11,12 +11,12 @@ class Attribute extends Cartalyst\Attributes\Attribute {
 
 	public function getOptionsAttribute($options)
 	{
-		return json_decode($options, true);
+		return ! empty($options) ? json_decode($options, true) : [];
 	}
 
 	public function setOptionsAttribute($options)
 	{
-		$this->attributes['options'] = ! empty($options) ? json_encode($options) : '';
+		$this->attributes['options'] = ! empty($options) ? json_encode($options) : null;
 	}
 
 }
