@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cart Demo</title>
+	<title>Attributes Demo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="{{ URL::to('/assets/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
 	<link href="{{ URL::to('/assets/css/font-awesome.min.css') }}" rel="stylesheet" media="screen">
