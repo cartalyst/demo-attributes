@@ -7,5 +7,5 @@
 1. Download or clone this repository
 2. Run `composer install` from your terminal
 3. Setup your database by renaming or duplicating `.env.example`
-4. Run migrations `php artisan migrate --seed`
+4. Run migrations `php artisan migrate --seed` or `php artisan demo:install`.
 5. Boot up your server!
