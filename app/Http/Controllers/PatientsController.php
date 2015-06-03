@@ -1,5 +1,8 @@
 <?php namespace App\Http\Controllers;
 
+use App\Attribute;
+use App\Patient;
+
 class PatientsController extends Controller {
 
 	/**
@@ -11,7 +14,7 @@ class PatientsController extends Controller {
 	{
 		$patients = Patient::all();
 
-		return View::make('patients.index', compact('patients'));
+		return view('patients.index', compact('patients'));
 	}
 
 	/**
@@ -23,7 +26,7 @@ class PatientsController extends Controller {
 	{
 		$attributes = Attribute::all();
 
-		return View::make('patients.create', compact('attributes'));
+		return view('patients.create', compact('attributes'));
 	}
 
 	/**
@@ -50,7 +53,7 @@ class PatientsController extends Controller {
 	{
 		$patient = Patient::find($id);
 
-		return View::make('patients.show', compact('patient'));
+		return view('patients.show', compact('patient'));
 	}
 
 	/**
@@ -64,7 +67,7 @@ class PatientsController extends Controller {
 		$patient = Patient::find($id);
 		$attributes = Attribute::all();
 
-		return View::make('patients.edit', compact('patient', 'attributes'));
+		return view('patients.edit', compact('patient', 'attributes'));
 	}
 
 	/**

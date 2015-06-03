@@ -1,6 +1,6 @@
 <?php namespace App;
 
-class Attribute extends Cartalyst\Attributes\Attribute {
+class Attribute extends \Cartalyst\Attributes\Attribute {
 
 	protected $fillable = array(
 		'name',

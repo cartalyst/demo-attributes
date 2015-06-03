@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use App\Attribute;
+
 class AttributesController extends Controller {
 
 	/**
@@ -11,7 +13,7 @@ class AttributesController extends Controller {
 	{
 		$attributes = Attribute::all();
 
-		return View::make('attributes.index', compact('attributes'));
+		return view('attributes.index', compact('attributes'));
 	}
 
 	/**
@@ -21,7 +23,7 @@ class AttributesController extends Controller {
 	 */
 	public function create()
 	{
-		return View::make('attributes.create');
+		return view('attributes.create');
 	}
 
 	/**

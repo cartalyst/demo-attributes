@@ -1,5 +1,8 @@
 <?php
 
+use App\Patient;
+use Illuminate\Database\Seeder;
+
 class PatientsTableSeeder extends Seeder {
 
 	public function run()

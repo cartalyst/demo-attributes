@@ -1,5 +1,8 @@
 <?php
 
+use App\Attribute;
+use Illuminate\Database\Seeder;
+
 class AttributesTableSeeder extends Seeder {
 	public function run()
 	{
