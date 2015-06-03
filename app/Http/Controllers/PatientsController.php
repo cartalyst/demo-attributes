@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use Request;
 use App\Attribute;
 use App\Patient;
 
@@ -37,10 +38,10 @@ class PatientsController extends Controller {
 	public function store()
 	{
 		Patient::create(
-			Input::except('_token')
+			Request::except('_token')
 		);
 
-		return Redirect::to('patients')->with('message', 'Patient Saved.');
+		return redirect('patients')->with('message', 'Patient Saved.');
 	}
 
 	/**
@@ -80,9 +81,9 @@ class PatientsController extends Controller {
 	{
 		$patient = Patient::find($id);
 
-		$patient->fill(Input::except('_token'))->update();
+		$patient->fill(Request::except('_token'))->update();
 
-		return Redirect::to('patients/' . $id . '/edit')->with('message', 'Patient Saved.');
+		return redirect('patients/' . $id . '/edit')->with('message', 'Patient Saved.');
 	}
 
 }

@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use Request;
 use App\Attribute;
 
 class AttributesController extends Controller {
@@ -35,18 +36,18 @@ class AttributesController extends Controller {
 	{
 		$options = array();
 
-		foreach (Input::get('options', array()) as $option)
+		foreach (Request::get('options', array()) as $option)
 		{
 			if ( ! $option['key'] and ! $option['value']) continue;
 
 			$options[$option['key']] = $option['value'];
 		}
 
-		$input = array_merge(Input::except('options', '_token'), compact('options'));
+		$input = array_merge(Request::except('options', '_token'), compact('options'));
 
 		Attribute::create($input);
 
-		return Redirect::to('attributes')->with('message', 'Attribute Saved.');
+		return redirect('attributes')->with('message', 'Attribute Saved.');
 	}
 
 	/**
@@ -59,7 +60,7 @@ class AttributesController extends Controller {
 	{
 		Attribute::find($id)->delete();
 
-		return Redirect::to('attributes')->with('message', 'Attribute Deleted.');
+		return redirect('attributes')->with('message', 'Attribute Deleted.');
 	}
 
 }
