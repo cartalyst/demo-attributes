@@ -6,8 +6,6 @@
 
 1. Download or clone this repository
 2. Run `composer install` from your terminal
-3. Setup your database in `app/config/database.php`
-4. Run migrations
-	- `php artisan migrate --package=cartalyst/attributes`
-	- `php artisan migrate --seed`
+3. Setup your database by renaming or duplicating `.env.example`
+4. Run migrations `php artisan migrate --seed`
 5. Boot up your server!
