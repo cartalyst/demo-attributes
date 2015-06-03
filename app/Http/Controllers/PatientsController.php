@@ -1,6 +1,6 @@
-<?php
+<?php namespace App\Http\Controllers;
 
-class PatientsController extends \BaseController {
+class PatientsController extends Controller {
 
 	/**
 	 * Display a listing of the patients.

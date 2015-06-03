@@ -1,4 +1,4 @@
-<?php
+<?php namespace App;
 
 class Attribute extends Cartalyst\Attributes\Attribute {
 

@@ -1,6 +1,6 @@
-<?php
+<?php namespace App\Http\Controllers;
 
-class AttributesController extends \BaseController {
+class AttributesController extends Controller {
 
 	/**
 	 * Display a listing of the attributes.
