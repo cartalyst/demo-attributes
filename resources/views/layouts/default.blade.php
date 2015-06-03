@@ -54,6 +54,8 @@
             </div>
         </nav>
 
+        @include('partials.notifications')
+
         @yield('content')
     </div>
 
