@@ -11,7 +11,7 @@
 	<br />
 
 	<div class="form-horizontal">
-		{{ Form::open(array('url' => '/attributes')) }}
+		{!! Form::open(array('url' => '/attributes')) !!}
 
 		<div class="form-group">
 			<div class="col-xs-6">
@@ -81,7 +81,7 @@
 			</div>
 		</div>
 
-		{{Form::close()}}
+		{!! Form::close() !!}
 	</div>
 
 @stop

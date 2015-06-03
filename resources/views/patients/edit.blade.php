@@ -10,7 +10,7 @@
 </div>
 
 <div class="form-horizontal">
-	{{ Form::open(array('url' => '/patients/' . $patient->id, 'method' => 'PUT')) }}
+	{!! Form::open(array('url' => '/patients/' . $patient->id, 'method' => 'PUT')) !!}
 
 	<div class="form-group">
 		<div class="col-xs-10">
@@ -70,7 +70,7 @@
 		</div>
 	</div>
 
-	{{Form::close()}}
+	{!! Form::close() !!}
 </div>
 
 
