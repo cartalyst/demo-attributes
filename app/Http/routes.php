@@ -2,7 +2,7 @@
 
 Route::get('/', function()
 {
-	return View::make('home');
+	return view('home');
 });
 
 Route::resource('patients', 'PatientsController');
