@@ -8,11 +8,11 @@
         {!! Form::open(array('url' => '/patients/' . $patient->id, 'method' => 'PUT')) !!}
             <div class="form-group">
                 <div class="col-xs-10">
-                    <input type="text" name="name" class="form-control input-lg" placeholder="Name" value="{{ Input::old('name', $patient->name) }}">
+                    <input type="text" name="name" class="form-control input-lg" placeholder="Name" value="{{ old('name', $patient->name) }}">
                 </div>
 
                 <div class="col-xs-2">
-                    <input type="number" name="age" class="form-control input-lg" placeholder="Age" value="{{ Input::old('age', $patient->age) }}">
+                    <input type="number" name="age" class="form-control input-lg" placeholder="Age" value="{{ old('age', $patient->age) }}">
                 </div>
             </div>
 
