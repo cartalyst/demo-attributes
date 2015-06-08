@@ -43,9 +43,9 @@
 
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li {{ URL::current() === URL::to('') ? 'class="active"' : null }}><a href="{{ URL::to('/') }}">Home</a></li>
-                    <li {{ URL::current() === URL::to('patients') ? 'class="active"' : null }}><a href="{{ URL::to('patients') }}">Patients</a></li>
-                    <li {{ URL::current() === URL::to('attributes') ? 'class="active"' : null }}><a href="{{ URL::to('attributes') }}">Attributes</a></li>
+                    <li {!! URL::current() === URL::to('') ? 'class="active"' : null !!}><a href="{{ URL::to('/') }}">Home</a></li>
+                    <li {!! URL::current() === URL::to('patients') ? 'class="active"' : null !!}><a href="{{ URL::to('patients') }}">Patients</a></li>
+                    <li {!! URL::current() === URL::to('attributes') ? 'class="active"' : null !!}><a href="{{ URL::to('attributes') }}">Attributes</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
