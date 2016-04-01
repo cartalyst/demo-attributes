@@ -37,9 +37,9 @@ class DemoInstall extends Command {
 	 */
 	public function fire()
 	{
-		$this->call('migrate:reset');
-		$this->call('migrate');
-		$this->call('db:seed');
+		$this->call('migrate:reset', ['--force' => true]);
+		$this->call('migrate', ['--force' => true]);
+		$this->call('db:seed', ['--force' => true]);
 	}
 
 	/**
