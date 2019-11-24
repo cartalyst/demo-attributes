@@ -16,7 +16,7 @@ use App\Http\Controllers\Demo\PatientsController;
 use App\Http\Controllers\Demo\AttributesController;
 
 Route::get('/', function () {
-    return redirect('/demo');
+    return redirect()->route('demo.home');
     // return view('welcome');
 });
 
